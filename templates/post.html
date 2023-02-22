@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post</title>
+    <style>
+    *{
+      box-sizing: border-box;
+     }
+    body{
+    color: #453738;
+    background-color: powderblue;
+    padding: 20px;
+    font-family: sans-serif;
+    }
+
+    .header{
+        background-color: white;
+        padding: 2px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .leftcolumn{
+           float: left;
+           width: 100%;
+    }
+
+    .card{
+        background-color: white;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .row:after{
+            display: table;
+            content: "";
+    }
+
+    </style>
+</head>
+<body>
+<div class="header">
+  <h2>Jazeels's Blog</h2>
+</div>
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+          <h2>{{ instance.title }}</h2>
+          <h5>{{ instance.date }}</h5>
+          <p>{{ instance.body }}</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
